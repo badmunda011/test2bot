@@ -60,7 +60,7 @@ if UPSTREAM_REPO:
                      && git commit -sm update -q \
                      && git remote add origin {UPSTREAM_REPO} \
                      && git fetch origin -q \
-                     && git reset --hard origin/{UPSTREAM_BRANCH} -q"], shell=Fasle)
+                     && git reset --hard origin/{UPSTREAM_BRANCH} -q"], shell=True)
     log_info('Fetching latest updates...')
     if update.returncode == 0:
         log_info('Successfully updated...')
