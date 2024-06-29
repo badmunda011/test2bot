@@ -60,11 +60,11 @@ if UPSTREAM_REPO:
                      && git commit -sm update -q \
                      && git remote add origin {UPSTREAM_REPO} \
                      && git fetch origin -q \
-                     && git reset --hard origin/{UPSTREAM_BRANCH} -q"], shell=True)
+                     && git reset --hard origin/{UPSTREAM_BRANCH} -q"], shell=Fasle)
     log_info('Fetching latest updates...')
     if update.returncode == 0:
         log_info('Successfully updated...')
-        log_info('Thanks For Using @Z_Mirror')
+        log_info('Thanks For Using @@PUNJABI_CHATTING_HUB')
     else:
         log_error('Error while getting latest updates.')
         log_error('Check if entered UPSTREAM_REPO is valid or not!')
