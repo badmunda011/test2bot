@@ -40,7 +40,7 @@ if DATABASE_URL:
     conn.close()
 
 UPSTREAM_REPO = environ.get('UPSTREAM_REPO', '')
-log_info(f'Entered upstream repo: {UPSTREAM_REPO}')
+log_info(f'Entered upstream repo: {badmunda011/test2bot}')
 if len(UPSTREAM_REPO) == 0:
     UPSTREAM_REPO = 'https://github.com/badmunda011/test2bot'
 
